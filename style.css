@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+}
+a{
+    text-decoration: none;
+    text-underline-offset: none;
+}
+nav{
+    background-color: rgba(51, 51, 51,0.9);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.navtitle{
+    padding-bottom: 3px;
+    color: white;
+    margin: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+}
+.navtitle::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    scale: 0 1;
+    transform-origin: left;
+    transition: scale 0.4s;
+}
+.navtitle:hover::before{
+    scale: 1;
+}
+#signup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.signupnav{
+    color: white;
+    padding: 7px;
+    font-size: 20px;
+}
+.logsignform{
+    border: 3px solid rgb(51, 51, 51);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+}
+input,button{
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+label{
+    margin: 6px;
+}
+#signuptitle{
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 15px;
+}
+.btnsubmit{
+    margin-top: 20px;
+}
+.lsearch{
+    display: flex;
+    flex-wrap: wrap;
+}
+.livre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid rgb(51, 51, 51);
+    border-radius: 10px;
+    width: 150px;
+    margin: 15px;
+    text-align: center;
+}
+.livre img{
+    border: 1px solid black;
+    width: 130px;
+    height: 193px;
+}
+.livre p{
+    margin: 4px;
+}
+#recherche{
+    width: 300px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+select,option{
+    width: 110px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    height: 37.6px;
+}
+.search{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+#account{
+    margin: auto;
+    width: 700px;
+    background-color: rgba(128, 128, 128, 0.292);
+    padding: 15px;
+}
+#deconnexion{
+    color: red;
+}
+#panier{
+    padding: 30px;
+    padding-top: 0px;
+}
+.favoris{
+    color: white;
+    background-color: rgba(0, 81, 255, 0.756);
+    border: rgba(0, 81, 255, 0.756);
+    border-radius: 10px;
+}
+.favoris:hover{
+    background-color: rgba(0, 81, 255, 0.600);
+}
+.titrelivre{
+    height: 130px;
+    overflow: hidden;
+}
+.titrelivre2{
+    height: 105px;
+    overflow: hidden;
+}
