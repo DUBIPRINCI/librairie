@@ -4,6 +4,4 @@
     <img src="libraire.jpg" width="700px">
 </section>
 
-
-
 <?php require "footer.php" ?>
