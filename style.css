@@ -105,7 +105,7 @@ label{
     border: 1px solid black;
 }
 select,option{
-    width: 110px;
+    width: 210px;
     margin-bottom: 20px;
     border: 1px solid black;
     border-radius: 5px;
@@ -151,4 +151,32 @@ select,option{
 .titrelivre2{
     height: 105px;
     overflow: hidden;
+}
+.changer{
+    display: flex;
+    justify-content: space-between;
+}
+.modifier{
+    display: flex;
+    padding: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: none;
+    background-color: rgba(218, 218, 218, 1);
+}
+.changerinfo{
+    border: 3px solid rgb(51, 51, 51);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+}
+#changement{
+    width: 200px;
 }

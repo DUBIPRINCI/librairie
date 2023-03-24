@@ -13,10 +13,10 @@ $row = $reponse->fetch_assoc();
 if (password_verify($Password, $row['mdp'])){
     session_start();
     $_SESSION["user"] = $row["id"];
-    $_SESSION["nom"] = $row["nom"];
-    $_SESSION["prenom"] = $row["prenom"];
-    $_SESSION["mail"] = $row["mail"];
-    $_SESSION["date"] = $row["creationdate"];
     header("Location: account.php");
+} else {
+    echo "Mauvais Mot de passe";
+    echo '<br>';
+    echo '<a href="login.php">clique ic pour réessayer</a>';
 }
 ?>

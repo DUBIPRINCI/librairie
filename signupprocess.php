@@ -10,11 +10,13 @@ $req = "INSERT INTO `users` (nom, prenom, mail, mdp) VALUES ('$Name', '$Firstnam
 
 $result = mysqli_query($mysqli,$req);
 session_start();
+$request = "SELECT * FROM users WHERE mail = '$Email'";
+
+$reponse = mysqli_query( $mysqli,$request);
+
+$row = $reponse->fetch_assoc();
+
 $_SESSION["user"] = $row["id"];
-$_SESSION["nom"] = $row["nom"];
-$_SESSION["prenom"] = $row["prenom"];
-$_SESSION["mail"] = $row["mail"];
-$_SESSION["date"] = $row["creationdate"];
 
 mysqli_close($mysqli);
 
